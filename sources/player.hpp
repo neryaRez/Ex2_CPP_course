@@ -13,17 +13,19 @@ namespace ariel{
         std::string name;
         std::vector<ariel::Card> packet;
 
-        Player(std::string);
+        public:
 
-        void stacksize();
+            Player(std::string);
 
-        void cardesTaken();
+            ~Player();
 
+            void stacksize();
 
-    }
+            void cardesTaken();
 
+            
 
-
+    };
 
 
 }
