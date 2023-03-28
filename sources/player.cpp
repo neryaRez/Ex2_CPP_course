@@ -2,19 +2,24 @@
 
 using namespace std;
 
-using namespace ariel;
 
 namespace ariel{
+    
 
     Player::Player(string s){
         this->name = s;
+        
     }
 
     Player::~Player(){}
 
-    void Player::cardesTaken(){}
+    int Player::cardesTaken(){
+        return 1;
+    }
 
-    void Player::stacksize(){}
+    int Player::stacksize(){
+        return 1;
+    }
 
 
 }

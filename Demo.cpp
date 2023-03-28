@@ -9,6 +9,7 @@
 #include <fstream>
 #include <sstream>
 #include <stdexcept>
+#include <string.h>
 using namespace std;
 
 #include "sources/player.hpp"

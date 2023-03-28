@@ -1,8 +1,5 @@
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <stdexcept>
-#include <vector>
+#pragma once
+
 #include "player.hpp"
 
 
@@ -13,35 +10,27 @@ namespace ariel{
     ariel::Player p1;
     ariel::Player p2;
     std::vector <std::string> turns;
+    std::vector<Card> stack;
+    
 
     public:
 
-        Game(ariel::Player, ariel::Player);
+        Game(Player&, Player&);
 
         ~Game();
 
-        void playTurn(){}
+        void playTurn();
 
-        void playAll(){}
+        void playAll();
 
-        void printLastTurn(){}
+        void printLastTurn();
 
-        void printWiner(){}
+        void printWiner();
 
-        void printStats(){}
+        void printStats();
 
-        void printLog(){}
-
-
-
-
-
+        void printLog();
 
    };
-    
-
-
-
-
-
+   
 }

@@ -1,25 +1,24 @@
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <stdexcept>
+#include <string>
+#pragma once
+using namespace std;
 
 namespace ariel
 {
     class Card{
 
-        std::string type; //sprades, hearts, diamonds, clubs 
+        string type; //sprades, hearts, diamonds, clubs 
         int value;
 
         public:
 
-            Card(std::string, int);
+            Card(string, int);
             Card(ariel::Card&);
             ~Card();
             int get_value();
-            std::string get_type();
-            bool Card::operator == (const ariel::Card&) const;
-            bool Card::operator > (const ariel::Card&) const;
-            bool Card::operator < (const ariel::Card&) const;
+            string get_type();
+            bool operator == (const ariel::Card&) const;
+            bool operator > (const ariel::Card&) const;
+            bool operator < (const ariel::Card&) const;
 
     };
 }

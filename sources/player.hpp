@@ -1,27 +1,28 @@
+#pragma once
 #include <iostream>
-#include <fstream>
-#include <sstream>
-#include <stdexcept>
 #include <vector>
+#include <string>
 #include "card.hpp"
-
+using namespace std;
 
 namespace ariel{
 
     class Player{
 
-        std::string name;
-        std::vector<ariel::Card> packet;
+
+        string name;
+        vector<Card> packet;
 
         public:
 
-            Player(std::string);
+            //Player();
+            Player(string name);
 
             ~Player();
 
-            void stacksize();
+            int stacksize();
 
-            void cardesTaken();
+            int cardesTaken();
 
             
 
