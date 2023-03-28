@@ -1,6 +1,8 @@
 #pragma once
-#include "card.hpp"
 
+
+#include "card.hpp"
+using namespace std;
 
 namespace ariel{
 
@@ -8,7 +10,7 @@ namespace ariel{
 
 
         std::string name;
-        vector<Card> packet;
+       // std::vector<Card> packet;
 
         public:
 
@@ -20,8 +22,6 @@ namespace ariel{
             int stacksize();
 
             int cardesTaken();
-
-            
 
     };
 

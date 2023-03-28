@@ -7,9 +7,9 @@ namespace ariel{
 
    class Game {
 
-    ariel::Player p1;
-    ariel::Player p2;
-    std::vector <string> turns;
+    Player p1;
+    Player p2;
+    //std::vector <string> turns;
     
 
     public:

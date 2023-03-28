@@ -51,11 +51,11 @@ TEST_CASE("Test Nerya"){
     game.playTurn();
     game.playTurn();
 
-    CHECK(p1.stacksize()>=23 && p1.stacksize() <=26);
-    CHECK(p1.cardesTaken()>=0 && p1.cardesTaken() <=3);
+    CHECK((p1.stacksize()>=23 && p1.stacksize() <=26));
+    CHECK((p1.cardesTaken()>=0 && p1.cardesTaken() <=3));
 
-    CHECK(p2.stacksize()>=23 && p2.stacksize() <=26);
-    CHECK(p2.cardesTaken()>=0 && p2.cardesTaken() <=3);
+    CHECK((p2.stacksize()>=23 && p2.stacksize() <=26));
+    CHECK((p2.cardesTaken()>=0 && p2.cardesTaken() <=3));
 
     //Test another game's functions:
 
