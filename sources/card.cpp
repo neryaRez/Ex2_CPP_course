@@ -4,7 +4,7 @@
 using namespace std;
 
 namespace ariel{
-     Card::Card(string s , int i){
+     Card::Card(char s , int i){
     
         this->type = s;
         this->value = i;
@@ -18,7 +18,7 @@ namespace ariel{
 
     Card::~Card(){}
 
-    string Card::get_type(){
+    char Card::get_type(){
         return this->type;
     }
 

@@ -14,10 +14,10 @@ TEST_CASE("Test Nerya"){
 
     //Test_Card:
 
-    Card c1("spades", 9);
-    Card c2("spades", 5);
-    Card c3("hearts", 10);
-    Card c4("hearts", 10);
+    Card c1('s', 9);
+    Card c2('s', 5);
+    Card c3('d', 10);
+    Card c4('h', 10);
 
     //Test operators_Card:
 
@@ -27,7 +27,7 @@ TEST_CASE("Test Nerya"){
 
     // chcks the getters function of the card:
 
-    CHECK (c1.get_type() == "spades");
+    CHECK (c1.get_type() == 's');
     CHECK (c2.get_value() == 5);
 
     Player p1("yosef");

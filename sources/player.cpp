@@ -1,5 +1,5 @@
 #include "player.hpp"
-
+#include <string>
 using namespace std;
 
 

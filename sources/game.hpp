@@ -9,8 +9,7 @@ namespace ariel{
 
     ariel::Player p1;
     ariel::Player p2;
-    std::vector <std::string> turns;
-    std::vector<Card> stack;
+    std::vector <string> turns;
     
 
     public:
