@@ -1,5 +1,7 @@
-#include <string>
+
+
 #pragma once
+#include <string>
 using namespace std;
 
 namespace ariel
@@ -12,13 +14,13 @@ namespace ariel
         public:
 
             Card(string, int);
-            Card(ariel::Card&);
+            Card(Card&);
             ~Card();
             int get_value();
             string get_type();
-            bool operator == (const ariel::Card&) const;
-            bool operator > (const ariel::Card&) const;
-            bool operator < (const ariel::Card&) const;
+            bool operator == (const Card&) const;
+            bool operator > (const Card&) const;
+            bool operator < (const Card&) const;
 
     };
 }

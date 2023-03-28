@@ -1,13 +1,14 @@
 
 #include "card.hpp"
-#include <string>
+
 using namespace std;
 
 namespace ariel{
-    Card::Card(string s , int i){
+     Card::Card(string s , int i){
     
         this->type = s;
         this->value = i;
+        
     }
 
     Card::Card(Card& other){
