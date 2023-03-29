@@ -10,7 +10,7 @@ using namespace std;
 #include "sources/card.hpp"
 using namespace ariel;
 
-TEST_CASE("Test Nerya"){
+TEST_CASE("General Test"){
 
     //Test_Card:
 
